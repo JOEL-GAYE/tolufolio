@@ -20,7 +20,7 @@ const services = [
 const Services = () => {
   return (
     <section className="services-section">
-      <h2>My Services</h2>
+      <h2 className='title'>My Services</h2>
       <div className="card-container">
         {services.map((service, index) => (
           <div className="service-card" key={index}>

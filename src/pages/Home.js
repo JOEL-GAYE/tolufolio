@@ -4,17 +4,22 @@ import avatar from '../assets/avatar.jpg'
 const Home = () => {
   return (
     <div>
-        <h1>Hi,</h1> <h2>I am <h1 className='name'>Joel Ouma Oundo,</h1> a Front-end Developer
-        </h2>
+        <section className='card'>
+          <h1>Hi,</h1> 
+          <h2>I am Joel Ouma Oundo,a Front-End Developer</h2>
+        </section>
         <p className='wazi'>I develop and design experiences that makes people's lives<br/> simpler through web Apps. <br/>
         I work with
             React.js, HTML, CSS and javascript.
         </p>
-        <img 
+        <div className='photo-container'>
+          <img 
         src={avatar}
         alt='profile-pic'
         className='profile-avatar'>
         </img>
+        </div>
+        < button className='btn-contact'>CONTACT ME</button>
     </div>
   )
 }

@@ -14,6 +14,9 @@ function App() {
     <Router>
       < nav className='navbar'>
       <div className='container-fluid'>
+        <div className='logo'>
+          <p>Joel</p>
+        </div>
          <div className="navbar-nav me-auto">
               <Link to="/" className="nav-link custom-nav-link mx-3">Home|</Link>
               <Link to="/services" className="nav-link custom-nav-link mx-3">Services|</Link>
