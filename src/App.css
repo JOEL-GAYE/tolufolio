@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
-
 body {
-  margin: 5%;
+  margin: 0;
+  padding: 0;
+
   background-color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #root {
@@ -11,6 +11,17 @@ body {
   display: flex;
   flex-direction: column;
 }
+main{
+  flex: 1;
+  padding: 2rem;
+  padding-bottom: 100px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
 
 .profile-avatar {
   display: flex;
@@ -36,14 +47,12 @@ body {
 
 .wazi {
   font-weight: 600;
-  font-size:medium;
+  font: size 10rem;;
   display: grid;
   display: flex;
-  /* background: rgb(122, 95, 95); */
-  padding: 0px;
+  padding: 10px;
+  margin-top: 80px;
   width: 500px;
-  /* border-radius: 12px; */
-  /* box-shadow: 0 4px 12px rgba(246, 3, 3, 0.872); */
   transition: transform 0.2s ease;
   flex-wrap: wrap;
   justify-content: center;
@@ -67,16 +76,15 @@ body {
 }
 
 .footer-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: #333;
   color: white;
-  padding: 20px 0;
+  padding: px 0;
   text-align: center;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
   z-index: 1000;
 }
-
 .social-wrapper {
   max-width: 600px;
   margin: auto;
@@ -169,9 +177,10 @@ body {
   background: white;
   padding: 20px;
   width: 300px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(3, 43, 244, 0.1);
   transition: transform 0.2s ease;
+  border: 1px solid #ccc;
 }
 
 .project-card:hover {
@@ -190,37 +199,28 @@ body {
   text-decoration: underline;
 }
 
-.navbar-nav {
-  text-align:end;
-  font-size: large;
-  font-weight: bolder;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  justify-content:last baseline;
-  padding: 0rem;
-  /* background-color: ; */
-  box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
-}
-
-.navbar-nav .nav-link {
-  margin: 0;
-}
 .custom-navbar {
   background-color: #3c7ae3;
-  padding: 0rem;
+  padding: 10px 20px;
 }
+
+.navbar-nav {
+  align-items: center;
+}
+
 .custom-nav-link {
-  color: #3c7ae3;
-  font-weight: 700;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
   text-decoration: none;
-  transition: color 0.3s ease;
-  justify-content: stretch;
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin: 0.8rem;
 }
 
 .custom-nav-link:hover {
   color: #0d07cbf8;
+  transform: translateY(-2px);
 }
-
-
 
 /* Mobile (up to 480px) */
 @media (max-width: 480px) {}
@@ -239,10 +239,11 @@ body {
   display: flex;
   padding: 12px 24px;
   font-size: 16px;
-  margin-top: auto;
+  margin-top: 100px;
+  margin-left: 100px;
   color: white;
   border: none;
-  border-radius: 40px;
+  border-radius: 100px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -266,12 +267,8 @@ body {
 }
 .card{
   display: flex;
-  /* background: rgba(113, 53, 53, 0.356); */
   padding: 0px;
   width: 450px;
-  /* border-radius: 8px; */
-  /* box-shadow: 0 4px 12px rgba(235, 73, 3, 0.822); */
-  /* transition: transform 0.2s ease; */
   flex-wrap: wrap;
   justify-content: center;
   font-family:Gloria system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -281,6 +278,14 @@ body {
   position: relative;
   display: inline-block;
  text-decoration-thickness: 3px;
- text-underline-offset: 4px; 
- border-bottom: 4px solid dodgerblue;
+ text-underline-offset: 8px; 
+ border-bottom: 2px solid dodgerblue;
+}
+.dev{
+  font-size: 2rem;
+  font-style: normal;
+  color: #3c7ae3;
+}
+.joe{
+  color: #FFA500;
 }
