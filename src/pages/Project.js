@@ -16,9 +16,9 @@ const projectData = [
   },
   {
     title: 'Portfolio Website',
-    description: 'My personal portfolio built with React and Tailwind CSS.',
-    liveLink: 'https://yourname.github.io/portfolio',
-    codeLink: 'https://github.com/yourusername/portfolio',
+    description: 'My personal portfolio built with React and Bootstrap CSS.',
+    liveLink: 'https://tolufolio.netlify.app/',
+    codeLink: 'https://github.com/JOEL-GAYE/tolufolio',
   },
 ];
 
