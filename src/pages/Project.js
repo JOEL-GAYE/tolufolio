@@ -11,7 +11,7 @@ const projectData = [
   {
     title: 'Weather App',
     description: 'A weather forecasting app using OpenWeather API.',
-    liveLink: 'https://your-live-weather-app.com',
+    liveLink: 'https://mvuaapp.netlify.app/',
     codeLink: 'https://github.com/yourusername/weather-app',
   },
   {
